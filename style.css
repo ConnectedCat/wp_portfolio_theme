@@ -1,0 +1,87 @@
+/*
+Theme Name: Connected Cat Portfolio
+Author: Maxim Safioulline
+Description: Custom template for Maxim's portfolio on Connected Cat site
+Version: 0.0.1
+*/
+
+
+/* header section */
+
+body {
+  /*font-family: 'edmondsans', sans-serif;*/
+  font-family: 'Anonymous Pro';
+}
+
+h3 {
+	text-transform: uppercase;
+	font-size: 15px;
+	/*font-family: 'edmondsansmedium', sans-serif;*/
+  font-family: 'Anonymous Pro';
+	letter-spacing: 1px;
+}
+
+p {
+	font-size: 14px;
+	line-height: 19px;
+	/*font-family: 'edmondsans', sans-serif;*/
+  font-family: 'Anonymous Pro';
+}
+
+a {
+	color: #333;
+}
+
+a:hover,
+a:focus,
+a:active {
+	color: #333;
+	background-color: rgba(255, 255, 0, 0.7);
+	text-decoration: none;
+}
+
+.navbar-default {
+  background-color: transparent;
+  border: none;
+}
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav>li>a {
+  color: #333;
+}
+.navbar-nav>li>a {
+  padding-top: 17px;
+  padding-bottom: 13px;
+}
+
+.portfolio-title {
+  margin-bottom: 30px;
+}
+
+.portfolio-text {
+  margin-bottom: 45px;
+}
+
+.portfolio-image {
+  min-height: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.portfolio-piece-row {
+  margin-bottom: 30px;
+}
+
+.portfolio-piece-row h3 {
+  margin-top: 0px;
+}
+
+.modal-content {
+  border-radius: 0px;
+}
+
+.modal-body img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
