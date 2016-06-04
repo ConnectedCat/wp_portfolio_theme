@@ -26,37 +26,42 @@ get_header();
 
       $toggle = false;
       $col_size = 0;
+      $counter = 1;
       foreach($pages as $page){
         $image_url_array = wp_get_attachment_image_src( get_post_thumbnail_id($page->ID), full );
-        $image_string = '<a href="'.$page->guid.'" target="_blank" class="js-portfolio-link"><div class="portfolio-image" style="background-image: url('.$image_url_array[0].')"></div>';
-        $title_string = '<h3>'.$page->post_title.'</a></h3>';
+        $image_string = '<a href="'.$page->guid.'" target="_blank" class="js-portfolio-link"><div class="portfolio-image" style="background-image: url('.$image_url_array[0].')"></div></a>';
+        $title_string = '<h3>'.$page->post_title.'</h3>';
 
         $col_size = rand(3, 6);
         $remainder = 6 - $col_size;
 
         if(!$toggle){
           echo '<div class="row portfolio-piece-row">';
-          echo '<div class="col-md-'.$remainder.' hidden-xs hidden-sm">';
-          echo '</div>';
-          echo '<div class="col-xs-12 col-md-'.$col_size.'">';
+            echo '<div class="col-md-'.$remainder.' hidden-xs hidden-sm"></div>';
+            echo '<div class="col-xs-12 col-md-'.$col_size.'">';
         }
         else {
-          echo '<div class="col-xs-12 col-md-'.$col_size.'">';
+            echo '<div class="col-xs-12 col-md-'.$col_size.'">';
         }
 
-          echo $image_string;
-          echo $title_string;
-          echo '</div>';
+              echo $image_string;
+              echo $title_string;
+            echo '</div>';
         if($toggle){
-          echo '<div class="col-md-'.$remainder.' hidden-xs hidden-sm">';
-          echo '</div>';
-          echo '</div>';
+            echo '<div class="col-md-'.$remainder.' hidden-xs hidden-sm"></div>';
+           echo '</div><!-- ending portfolio row -->';
+        }
+        else {
+          if($counter == sizeof($pages)){
+            echo '</div><!-- ending last incomplete portfolio row -->';
+          }
         }
         $toggle = !$toggle;
+        $counter++;
       }
     ?>
-  </div>
-</div>
+  </div> <!-- ending main 12 col -->
+</div> <!-- ending main row -->
 <?php
   get_footer();
 ?>

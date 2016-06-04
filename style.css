@@ -5,12 +5,25 @@ Description: Custom template for Maxim's portfolio on Connected Cat site
 Version: 0.0.1
 */
 
-
-/* header section */
+html, body {
+  height: 100%;
+}
 
 body {
   /*font-family: 'edmondsans', sans-serif;*/
   font-family: 'Anonymous Pro';
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+	margin-bottom: -67px;
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+  height: 67px;
 }
 
 h3 {

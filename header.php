@@ -27,7 +27,8 @@
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-	<nav class="navbar navbar-default">
+  <div class="page-wrap">
+	  <nav class="navbar navbar-default">
       <div class="container">
 
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -49,4 +50,4 @@
 
       </div>
     </nav>
-  <div class="container">
+    <div class="container">
