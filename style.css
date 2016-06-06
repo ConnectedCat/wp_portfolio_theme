@@ -43,6 +43,7 @@ p {
 
 a {
 	color: #333;
+  text-decoration: underline;
 }
 
 a:hover,
@@ -64,6 +65,7 @@ a:active {
 .navbar-nav>li>a {
   padding-top: 17px;
   padding-bottom: 13px;
+  text-decoration: none;
 }
 
 .portfolio-title {
