@@ -9,7 +9,14 @@
       	</h2>
       	<?php the_content(); ?>
       <div><?php previous_post_link('&laquo; %link') ?><span class="pull-right"><?php next_post_link('%link &raquo;') ?></span></div>
+      <?php
+        // If comments are open or we have at least one comment, load up the comment template.
+        if ( comments_open() || get_comments_number() ) :
+          comments_template();
+        endif;
+      ?>
     <?php endwhile; ?>
+    
   </div>
 </div>
 
