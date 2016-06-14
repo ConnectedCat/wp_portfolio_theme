@@ -3,7 +3,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<title><?php bloginfo('name'); wp_title('&colon;'); ?></title>
+  	<title><?php bloginfo('name'); wp_title(' : '); ?></title>
 
 	<link href='https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700' rel='stylesheet' type='text/css'>
 	<link href="<?php bloginfo('template_directory');?>/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
