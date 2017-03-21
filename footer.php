@@ -1,6 +1,6 @@
     </div> <!-- ending container -->
-  </div> <!-- ending page-wrap -->  
-  
+  </div> <!-- ending page-wrap -->
+
   <footer class="container">
     <div class="row">
       <div class="col-xs-12 col-md-4 col-md-offset-8">
@@ -8,6 +8,6 @@
       </div>
     </div>
   </footer>
-
+  <?php wp_footer(); ?>
 </body>
 </html>
